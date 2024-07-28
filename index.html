@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kat's nyt games</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+  </head>
+  <body>
+    <main>
+        <div class="row-outer">
+            <div class="container">
+                <div class="animated-heading">
+                    <h1 id="title" class="NYT-Karnak center-text">Beat Kat at <span id="words">The Mini</span></h1>  
+                </div>
+            </div>
+        </div>
+
+        <!-- js function -->
+        <script type="text/javascript">
+            (function() {
+                var words = [
+                    "The Mini",
+                    "Wordle",
+                    "Connections",
+                    "The Mini"
+                ],
+                i = 0;
+                setInterval(function(){
+                    $('#words').fadeOut(function(){
+                        $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+                    });
+                }, 1000)
+            })();
+        </script>
+
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>

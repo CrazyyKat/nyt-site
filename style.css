@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'NYT Karnak'; /* Name your font family */
+    src: url('NYTKarnakCondensed.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+  
+/* .animated-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+} */
+
+  .center-text {
+    text-align: center;
+  }
+
+.NYT-Karnak {
+    font-family:'NYT Karnak', sans-serif;
+  }
+
+  #title {
+    font-size: 7vw;  /* vw is a relative unit that scales to viewport size*/
+  }
+
